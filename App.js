@@ -47,7 +47,7 @@ export default function App() {
 
   const SpotifyAuthButton = () => {
     return(
-      <Pressable style={styles.spotifyButton} onLongPress={(promptAsync)}>
+      <Pressable style={styles.spotifyButton} onPress={() => promptAsync()}>
         <Image style={styles.smallSpotify} source={require('./assets/spotify-logo.png')}/>
         <Text style={styles.buttonText}>CONNECT WITH SPOTIFY</Text>   
       </Pressable>
